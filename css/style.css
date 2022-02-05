@@ -1,0 +1,358 @@
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:landscape) 
+{
+    /* iPad landscape style here */
+}
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:portrait) 
+{
+    /* iPad portrait style here */
+}
+
+body{
+    padding: 75px;
+    background-color: whitesmoke;
+}
+
+.heading{
+    font-size: 150%;
+    font-weight: bold;
+    padding: 19px;
+    color: #445E93;
+
+}
+
+.location-logo{
+    width: 30px;
+}
+
+#location{
+    font-size: 100%;
+    padding: 19px;
+    color: #445E93;
+
+}
+
+span{
+    font-size: 150%;
+}
+
+a, p, h1, strong, h1, h2, h3, h4,  li, figcaption, b, input, button {
+    font-family: 'Goudy Bookletter 1911',Georgia,"Times New Roman",serif;
+}
+
+.nav-items{
+    color: #445E93;
+    text-align: center;
+    text-decoration: none;
+}
+
+/** ABOUT ME SECTION **/
+
+
+#name{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.profile-pic {
+    border-radius: 60%;
+  }
+
+.menu-items{
+    float: right;
+    padding: 20px;  
+}
+ul{
+    list-style-type: none;
+}
+
+#bio{
+    padding: 19px;  
+}
+
+#about-me
+{
+    display: flex;
+    width: 1200px;
+    border: 1px none white;
+    padding: 2px;
+    margin: 20px;
+}
+
+/** EDUCATION **/
+
+#education{
+    display: flex;
+    width: 1200px;
+    border: 1px none white;
+    padding: 2px;
+    margin: 20px;
+
+}
+
+#education1{
+    width: 600px;
+    border-right: 1px solid black;
+}
+
+#education2{
+    width: 600px;
+}
+.degree{
+    font-size: 120%;
+}
+
+.institution{
+    font-size: 130%;
+    font-weight: bold;
+    color: #445E93;
+
+}
+
+/** WORK EXPERIENCE **/
+
+.designation{
+    font-style: italic;
+}
+
+.achievement-section{
+    display: flex;      
+
+}
+
+.achievements{
+    width: 500px;
+    height: 200px;
+    margin: 5px;
+    font-size: 90%;
+    border: 0.1px ridge rgb(230, 222, 222)
+}
+
+.certificate-heading{
+    white-space: nowrap;
+    margin-right: 45px;
+    color: #445E93;
+
+}
+
+/** PROJECT SECTION **/
+
+.project-section
+{
+    display: flex;
+
+}
+
+.project{
+    display: flex;
+}
+
+.project-details{
+    width: 500px;
+    height: 300px;
+    margin: 5px;
+    font-size: 80%;
+    border: 0.1px ridge rgb(230, 222, 222)
+}
+
+.btnProject{
+    font-weight: bold;
+    float: right;
+    width: 150px;
+    height: 30px;
+    background-color: #80a7f5;
+    margin-right: 10px;
+}
+
+.project-heading{
+    color: #445E93;
+    font-size: 110%;
+}
+
+.project-logos{
+    width: 40px;
+}
+
+.resume-section{
+    width: 1200px;
+    border: 1px none #E6E6E9;
+}
+
+.companyLogo{
+    width: 60px;
+    margin: 20px;
+}
+
+.tech-stack{
+    width: 85px;
+    height: 30px;   
+    margin: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: center;
+    border: 2px none black;
+    background-color: #80a7f5;
+}
+
+/** SKILLS SECTION **/
+
+.skills-pictures{
+    width: 500px;
+}
+
+.technologies{
+    display: flex;
+    position: relative;
+}
+
+.img__description {
+    position: absolute;
+    top: 30;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 130%;
+    overflow: hidden;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+
+  .technologies:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.sub-heading{
+    font-size: 110%;
+    font-weight: bold;
+    padding: 19px;
+    color: #445E93;
+
+}
+
+/** CONTACT ME SECTION **/
+
+#send-message{
+    width: 1200px;
+    border: 1px none #000;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-right: 200px;
+}
+
+#contact-person{
+    margin-right: 15px;
+}
+
+.message-header{
+    color: #445E93;
+
+}
+  
+#message{
+    width: 540px;
+    height: 200px;
+    margin-left: 100px;
+}
+
+.textform{
+    width: 300px;
+    height: 30px;
+}
+.label-form{
+    font-weight: bold;
+    color: #445E93;
+
+}
+#label2{    
+    margin: 270px;
+}
+
+#btnSubmit{
+    background-color: #445E93;
+    color: #fff;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    margin-left: 100px;
+    font-family: 'Goudy Bookletter 1911',Georgia,"Times New Roman",serif;;
+}
+
+
+/** Footer Section **/
+
+.navigate-top{
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    width: 100px;
+}
+
+
+footer{
+    width: 1200px;
+    border: 1px none white;
+    font-family: 'Goudy Bookletter 1911',Georgia,"Times New Roman",serif;;
+}
+
+#social-media{
+    float: right;
+}
+
+.social-media-logos{
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+.follow-me{
+    font-weight: bold;
+    font-size: 110%;
+}
+
+#copyright{
+    margin-left: 450px;
+    margin-top: 100px;
+    font-size: 100%;
+}
+
+/** KNOW ME MORE **/
+
+.know-me-section{
+    display: flex;
+}
+
+.know-me-heading{
+    font-size: 200%;
+    margin-top: 110px;
+    color:#445E93;
+    white-space: nowrap;
+}
+
+.content{
+    margin: 20px;
+}
+
+.know-me-description{
+    margin-top: 130px;
+}
+
+.media-gallery{
+    width: 600px;
+    margin-left: 15px;
+}
+
+.img-caption{
+    font-weight: bold;
+}
