@@ -12,15 +12,9 @@
 {
     /* iPad portrait style here */
 }
-
-body{
-    padding: 75px;
-    background-color: whitesmoke;
-}
-
 .typewriter {
     font-family: 'Goudy Bookletter 1911',Georgia,"Times New Roman",serif;
-    display: inline-block;
+	display: inline-block;
 }
 
 .typewriter-text {
@@ -31,10 +25,9 @@ body{
     white-space: nowrap;
     font-size: 30px;
     font-weight: 700;
-    border-right: 4px solid orange;
+    border-right: 4px solid #445E93;
     box-sizing: border-box;
-    color: #445E93;
-
+    color: #445E93
 }
 
 @keyframes typing {
@@ -55,6 +48,10 @@ body{
     }
 }
 
+body{
+    padding: 75px;
+    background-color: whitesmoke;
+}
 
 .heading{
     font-size: 150%;
@@ -334,7 +331,7 @@ ul{
     position: fixed;
     bottom: 0.5rem;
     right: 0.5rem;
-    width: 100px;
+    width: 60px;
 }
 
 
