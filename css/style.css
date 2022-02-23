@@ -1,17 +1,7 @@
-@media only screen
-  and (min-device-width : 768px)
-  and (max-device-width : 1024px)
-  and (orientation:landscape) 
-{
-    /* iPad landscape style here */
+html{
+    padding: 100px;
 }
-@media only screen
-  and (min-device-width : 768px)
-  and (max-device-width : 1024px)
-  and (orientation:portrait) 
-{
-    /* iPad portrait style here */
-}
+
 .typewriter {
     font-family: 'Goudy Bookletter 1911',Georgia,"Times New Roman",serif;
 	display: inline-block;
@@ -21,7 +11,9 @@
     display: inline-block;
   	overflow: hidden;
   	letter-spacing: 2px;
- 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+      animation: 
+      6s typing-erase 6s steps(50, end) infinite,
+      blink-caret .5s step-end infinite;
     white-space: nowrap;
     font-size: 30px;
     font-weight: 700;
@@ -30,28 +22,20 @@
     color: #445E93
 }
 
-@keyframes typing {
-    from { 
-        width: 0% 
-    }
-    to { 
-        width: 100% 
-    }
-}
+  
+  /* The type and erase effect */
+  @keyframes typing-erase {
+    0% { width: 0 }
+    80% { width: 100% }
+    90%, 100% { width: 0 }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: gray }
+  }
 
-@keyframes blink {
-    from, to { 
-        border-color: transparent 
-    }
-    50% { 
-        border-color: orange; 
-    }
-}
-
-body{
-    padding: 75px;
-    background-color: whitesmoke;
-}
 
 .heading{
     font-size: 150%;
@@ -80,10 +64,21 @@ a, p, h1, strong, h1, h2, h3, h4,  li, figcaption, b, input, button {
     font-family: 'Goudy Bookletter 1911',Georgia,"Times New Roman",serif;
 }
 
-.nav-items{
+/* .nav-item{
     color: #445E93;
     text-align: center;
     text-decoration: none;
+} */
+
+.nav-bar{
+    margin-left: 210px;
+}
+
+
+.nav-link{
+    color: #445E93;
+    margin-left: 9px;
+    font-size: 93%;
 }
 
 /** ABOUT ME SECTION **/
@@ -177,6 +172,10 @@ ul{
 
 /** PROJECT SECTION **/
 
+.card-title{
+    color: #80a7f5; font-family: 'Goudy Bookletter 1911',Georgia,'Times New Roman','serif'; font-size: 100%;
+}
+
 .project-section
 {
     display: flex;
@@ -231,14 +230,16 @@ ul{
     white-space: nowrap;
     font-weight: bold;
     text-align: center;
-    border: 2px none black;
+    font-size: 70%;
+    border: 1px none black;
     background-color: #80a7f5;
 }
 
 /** SKILLS SECTION **/
 
-.skills-pictures{
-    width: 500px;
+
+.img-fluid{
+    width: 550px;
 }
 
 .technologies{
@@ -256,7 +257,7 @@ ul{
     color: #fff;
     visibility: hidden;
     opacity: 0;
-    font-size: 130%;
+    font-size: 110%;
     overflow: hidden;
   
     /* transition effect. not necessary */
@@ -283,7 +284,7 @@ ul{
     border: 1px none #000;
     padding-left: 10px;
     padding-bottom: 10px;
-    margin-right: 200px;
+    /* margin-right: 200px; */
 }
 
 #contact-person{
