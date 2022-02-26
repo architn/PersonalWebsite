@@ -14,7 +14,7 @@
    
 </head>
 <body>  
-    <div class="container">
+    <div class="container-fluid">
        <div class="typewriter">
         <div class="typewriter-text">ARCHIT NIGAM | Software Engineer.</div>
        </div>
@@ -35,7 +35,7 @@
             </nav>
             <br> 
             <main>
-                <div id="about-me" class="container">
+                <div id="about-me" class="container-fluid">
                     <div id="imageArchitN">
                         <figure id="figureIntro">
                             <img src="../images/architN.JPEG" alt="profilepic" class="profile-pic" style="width:200px;height:205px;object-fit:cover;object-position:50% 50%">
@@ -74,10 +74,10 @@
             <hr>
             <div id="resume">
                 <h2 class="heading">EDUCATION:</h2>
-                <div id="education" class="container">
+                <div id="education" class="container-fluid">
                     <div class="row">
-                         <div class="col">
-                            <div class="jumbotron">
+                         <div class="col-sm">
+                            <div class="jumbotron" id="degree1">
                                 <img src="../images/neu.png" class="companyLogo"><a href="https://www.northeastern.edu/"></a>
                                 <h1 class="display-6" style="font-size: 200%">Northeastern University</h1><br>
                                 <h5 class="years">September 2021 - Expected May 2023</h5><br>
@@ -85,13 +85,13 @@
                                 <p class="lead" style="font-size: 112%;"><em>Master of Science in Information Systems</em></p>
                                 <hr class="my-4">
                                 <p><strong>Relevant Courses: </strong><br><em>Web Design and Development
-                                    , Web Development and Tools, Database Design and Management, Application Engineering and Development</em></p><br>
+                                    , Web Development and Tools, Database Design and Management, Application Engineering and Development</em></p>
                                 <a class="btn btn-primary btn-lg" target="_blank" href="https://www.northeastern.edu/" role="button">Visit university website</a>
                                 
                               </div>
                          </div>
-                        <div class="col">
-                            <div class="jumbotron">
+                        <div class="col-sm">
+                            <div class="jumbotron" id="degree2">
                                 <img src="../images/mu.png" class="companyLogo"><a href="https://www.northeastern.edu/"></a>
                                 <h1 class="display-6" style="font-size: 200%">University of Mumbai</h1><br>
                                 <h5 class="years">August 2014 - May 2018</h5><br>
@@ -107,8 +107,9 @@
  
                 </div>
                 <hr>
-                <div id="work-experience" class="container">
+                <div id="work-experience" class="container-fluid">
                     <h2 class="heading">WORK EXPERIENCE:</h2>
+                    
                     <div class="accordion" id="accordionExample">
                         <div class="card">
                           <div class="card-header" id="headingOne">
@@ -209,57 +210,68 @@
             </div>
             <hr>
              <h2 class="heading">PROJECTS:</h2>
-
-            <div class="card-group" id="projects">
-                <div class="card">
-                  <img class="card-img-top" src="../images/hospice.png" alt="Card image cap" style="width: 60px;">
-                  <div class="card-body">
-                    <h5 class="card-title"><a target="_blank" href="https://github.com/architn/HospiceCareManagementSystem">HOSPICE CARE MANAGEMENT SYSTEM:</a></h5>
-                    <p class="card-text"> Hospice Care Management System aims at improving the lives of patients suffering from terminal illness through accessible technology
-                        and bringing all the participants of the system under one roof.
-                        <br><br>It includes 24*7 access to Providers, Nurses, and Counsellors for their diagnosis and treatment 
-                        via a centralized system and database. It also handles finacial transactions associated with 
-                        a medical institution like claims, donations and audit logging. </p>
-                  </div>
-                  <div class="card-footer">
-                        <button class="btn btn-primary">JAVA</button>
-                        <button class="btn btn-primary">OOPS</button>
-                        <button class="btn btn-primary">SWING</button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="../images/food-delivery.png" alt="Card image cap" style="width: 60px;">
-                  <div class="card-body">
-                    <h5 class="card-title"><a target="_blank" href="https://github.com/architn/Restaurant-And-Food-Delivery-Database-System">RESTAURANT AND FOOD DELIVERY DATABASE:</a></h5>
-                    <p class="card-text">Restaurant and Food Delivery Database System is used to centralize 
-                        data of restaurants, customers, delivery partners and the associated workflows like dining, delivery, food wastage and 
-                        feedback under a single digital ecosystem. 
-                        <br><br>The data in this system can be used to manage, analyze and predict the 
-                        trends of restaurant and food delivery industry along with its profitability and accessibility.</li>
-                        <br>    </p>
-                  </div>
-                  <div class="card-footer">
-                        <button class="btn btn-primary">ERD</button>
-                        <button class="btn btn-primary">T-SQL</button>
-                        <button class="btn btn-primary">TABLEAU</button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="../images/edi.png" style="width: 60px;" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title"><a target="_blank" href="https://github.com/architn/EDI837Decoder">EDI 837 DECODER:</a></h5>
-                    <p class="card-text">A PowerShell script that can decode a EDI 837. It provides healthcare claim details like Submitter information, Receiver information, Vendor information, Consumer information, Claim details, Claim Service details etc. 
-                        <br><br>This decoding can save productivity of a user by 40-60 minutes a day of a user when developing features related 
-                    to claim management system.</p>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-primary">POWERSHELL</button>
-                    <button class="btn btn-primary">EDI</button>
-                    <button class="btn btn-primary">CLAIMS</button>
-                  </div>
-                </div>
-              </div>
+            <div class="row">
                 
+                <div class="card-group" id="projects">
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="card-img-top" src="../images/hospice.png" alt="Card image cap" style="width: 60px;">
+                            <div class="card-body">
+                              <h5 class="card-title"><a target="_blank" href="https://github.com/architn/HospiceCareManagementSystem">HOSPICE CARE MANAGEMENT SYSTEM:</a></h5>
+                              <p class="card-text"> Hospice Care Management System aims at improving the lives of patients suffering from terminal illness through accessible technology
+                                  and bringing all the participants of the system under one roof.
+                                  <br><br>It includes 24*7 access to Providers, Nurses, and Counsellors for their diagnosis and treatment 
+                                  via a centralized system and database. It also handles finacial transactions associated with 
+                                  a medical institution like claims, donations and audit logging. </p>
+                            </div>
+                            <div class="card-footer">
+                                  <button class="btn btn-primary">JAVA</button>
+                                  <button class="btn btn-primary">OOPS</button>
+                                  <button class="btn btn-primary">SWING</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="card-img-top" src="../images/food-delivery.png" alt="Card image cap" style="width: 60px;">
+                            <div class="card-body">
+                              <h5 class="card-title"><a target="_blank" href="https://github.com/architn/Restaurant-And-Food-Delivery-Database-System">RESTAURANT AND FOOD DELIVERY DATABASE:</a></h5>
+                              <p class="card-text">Restaurant and Food Delivery Database System is used to centralize 
+                                  data of restaurants, customers, delivery partners and the associated workflows like dining, delivery, food wastage and 
+                                  feedback under a single digital ecosystem. 
+                                  <br><br>The data in this system can be used to manage, analyze and predict the 
+                                  trends of restaurant and food delivery industry along with its profitability and accessibility.</li>
+                                  <br><br><br>    </p>
+                            </div>
+                            <div class="card-footer">
+                                  <button class="btn btn-primary">ERD</button>
+                                  <button class="btn btn-primary">T-SQL</button>
+                                  <button class="btn btn-primary">TABLEAU</button>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="card-img-top" src="../images/edi.png" style="width: 60px;" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title"><a target="_blank" href="https://github.com/architn/EDI837Decoder">EDI 837 DECODER:</a></h5>
+                              <p class="card-text">A PowerShell script that can decode a EDI 837. It provides healthcare claim details like Submitter information, Receiver information, Vendor information, Consumer information, Claim details, Claim Service details etc. 
+                                  <br><br>This decoding can save productivity of a user by 40-60 minutes a day of a user when developing features related 
+                              to claim management system.</p>
+                              <br><br>
+                            </div>
+                            <div class="card-footer">
+                              <button class="btn btn-primary">POWERSHELL</button>
+                              <button class="btn btn-primary">EDI</button>
+                              <button class="btn btn-primary">CLAIMS</button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+    
+            </div>
+                            
                 <br>
                 
         </main>   
@@ -270,14 +282,14 @@
         <hr>    
     <footer>
         <div id="contact-me-section" class="row">
-            <div class="col">
+            <div class="col-sm">
                 <h4 class="follow-me">CONTACT ME: </h4><br><br>
                 <a href="mailto:nigam.ar@northeastern.edu"><img src="../images/email.png" class="social-media-logos">
                 </a>
                 <a href="tel:857-867-7890"><img src="../images/call.png" class="social-media-logos">
                 </a>
             </div>
-            <div class="col">
+            <div class="col-sm">
                 <h4 class="follow-me">FOLLOW ME ON:</h4><br><br>
                 <a target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram" href="https://www.instagram.com/archit.n/"><img src="../images/instagram.png" class="social-media-logos" ></a>
                  <a target="_blank" data-toggle="tooltip" data-placement="top" title="LinkedIn" href="https://www.linkedin.com/in/archit-nigam/"><img src="../images/linkedin.png" class="social-media-logos"></a>
