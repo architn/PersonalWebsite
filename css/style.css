@@ -1,3 +1,12 @@
+#launch-page{
+    padding: 310px;
+    margin-left: 150px;
+}
+
+#welcome-message{
+    margin-left: 60px;
+}
+
 html{
     padding: 100px;
 }
@@ -91,6 +100,7 @@ a, p, h1, strong, h1, h2, h3, h4,  li, figcaption, b, input, button {
 
 .profile-pic {
     border-radius: 60%;
+    margin-top: 70px;
   }
 
 .menu-items{
@@ -150,30 +160,10 @@ ul{
     font-style: italic;
 }
 
-.achievement-section{
-    display: flex;      
-
-}
-
-.achievements{
-    width: 500px;
-    height: 200px;
-    margin: 5px;
-    font-size: 90%;
-    border: 0.1px ridge rgb(230, 222, 222)
-}
-
-.certificate-heading{
-    white-space: nowrap;
-    margin-right: 45px;
-    color: #445E93;
-
-}
-
 /** PROJECT SECTION **/
 
 .card-title{
-    color: #80a7f5; font-family: 'Goudy Bookletter 1911',Georgia,'Times New Roman','serif'; font-size: 100%;
+    color: #80a7f5; font-family: 'Goudy Bookletter 1911',Georgia,'Times New Roman','serif'; font-size: 90%; white-space: nowrap;
 }
 
 .project-section
@@ -222,17 +212,16 @@ ul{
     margin: 20px;
 }
 
-.tech-stack{
-    width: 85px;
-    height: 30px;   
-    margin: 10px;
+.btn.btn-primary{
+    /* width: 85px;
+    height: 30px;    */
+    margin-left: 10px;
     display: inline-block;
     white-space: nowrap;
     font-weight: bold;
     text-align: center;
-    font-size: 70%;
+    font-size: 90%;
     border: 1px none black;
-    background-color: #80a7f5;
 }
 
 /** SKILLS SECTION **/
@@ -277,62 +266,13 @@ ul{
 
 }
 
-/** CONTACT ME SECTION **/
-
-#send-message{
-    width: 1200px;
-    border: 1px none #000;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    /* margin-right: 200px; */
-}
-
-#contact-person{
-    margin-right: 15px;
-}
-
-.message-header{
-    color: #445E93;
-
-}
-  
-#message{
-    width: 540px;
-    height: 200px;
-    margin-left: 100px;
-}
-
-.textform{
-    width: 300px;
-    height: 30px;
-}
-.label-form{
-    font-weight: bold;
-    color: #445E93;
-
-}
-#label2{    
-    margin: 270px;
-}
-
-#btnSubmit{
-    background-color: #445E93;
-    color: #fff;
-    font-weight: bold;
-    width: 150px;
-    height: 50px;
-    margin-left: 100px;
-    font-family: 'Goudy Bookletter 1911',Georgia,"Times New Roman",serif;;
-}
-
-
 /** Footer Section **/
 
 .navigate-top{
     position: fixed;
     bottom: 0.5rem;
     right: 0.5rem;
-    width: 60px;
+    width: 100px;
 }
 
 
@@ -347,9 +287,9 @@ footer{
 }
 
 .social-media-logos{
-    width: 80px;
-    border-radius: 50%;
-    margin-left: 40px;
+    width: 50px;
+    height: 50px;
+    margin-right: 55px;
 }
 
 .follow-me{
@@ -358,9 +298,9 @@ footer{
 }
 
 #copyright{
-    margin-left: 450px;
+    margin-left: 400px;
     margin-top: 100px;
-    font-size: 100%;
+    font-size: 130%;
 }
 
 /** KNOW ME MORE **/
@@ -371,7 +311,7 @@ footer{
 
 .know-me-heading{
     font-size: 200%;
-    margin-top: 110px;
+    /* margin-top: 110px; */
     color:#445E93;
     white-space: nowrap;
 }

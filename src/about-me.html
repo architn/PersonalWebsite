@@ -7,112 +7,170 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="icon" href="../images/logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
     <title>About me - Archit Nigam</title>
 </head>
 <body>
-    <div id="container">
-        <span class="heading">ARCHIT NIGAM | Software Engineer.</span>
+    <div id="container" class="container">
+        <div class="typewriter">
+            <div class="typewriter-text">ARCHIT NIGAM | Software Engineer.</div>
+           </div>
         <br><br>
         <nav class="nav-bar">
-            <ul class="nav justify-content-center">
-                <li class="menu-items"><a href="index.html#contact-me-section" aria-current="page" class="nav-items">CONTACT</a></li>
-                <li class="menu-items"><a href="index.html#projects" aria-current="page" class="nav-items">PROJECTS</a></li>
-                <li class="menu-items"><a href="index.html#skills" aria-current="page" class="nav-items">SKILLS</a></li>
-                <li class="menu-items"><a href="index.html#work-experience" aria-current="page" class="nav-items">WORK EXPERIENCE</a></li>
-                <li class="menu-items"><a href="index.html#education" aria-current="page" class="nav-items">EDUCATION</a></li>
-                <li class="menu-items"><a href="index.html" aria-current="page" class="nav-items">HOME</a></li>
+            <ul class="nav">
+                <li class="nav-item"><a href="home.html#about-me" aria-current="page" class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="home.html#education" aria-current="page"class="nav-link">EDUCATION</a></li>
+                <li class="nav-item"><a href="home.html#work-experience" aria-current="page" class="nav-link">WORK EXPERIENCE</a></li>
+                <li class="nav-item"><a href="home.html#skills" aria-current="page" class="nav-link">SKILLS</a></li>
+                <li class="nav-item"><a href="home.html#projects" aria-current="page" class="nav-link">PROJECTS</a></li>
+                <li class="nav-item"><a href="home.html#contact-me-section" aria-current="page" class="nav-link">CONTACT</a></li>
+                <li class="nav-item"><a href="about-me.html" aria-current="page" class="nav-link">KNOW ME MORE!</a></li>        
             </ul>
         </nav>
         <br><br>
+        <h2 style="color:#445E93; font-size: 160%;">So, who am I? What's my journey? What am I passionate about?</h2>
         <div id="know-more" class="resume-section">
            <h2>&nbsp;</h2>
            <hr>
             <ul>
-                <div class="know-me-section">
-                    <li><img src="../images/mumbai.png" class="media-gallery"></li>
-                    <li class="content">
-                        <h1 class="know-me-heading">MUMBAI TO BOSTON.</h1>
-                       <p class="know-me-description">
-                        "I was raised in Mumbai, India. I moved to Boston, MA in 2020 to pursue my Master's 
-                        in Information Systems at Northeastern University. 
-                        <br><br>On the left is a picture of my favourite spot in Mumbai, the Queen's necklace. I can 
-                        sit here for hours just admiring the usually calm Arabian Sea."
-                       </p> 
-                    </li>
+                <div class="row">
+                    <div class="col">
+                        <img src="../images/mumbai.png" class="media-gallery">
+                    </div>
+                    <div class="col">
+                        <h1 class="know-me-heading">MUMBAI TO BOSTON.</h1><br><br><br><br><br><br>
+                        <p> "I was raised in Mumbai, India. I moved to Boston, MA in 2020 to pursue my Master's 
+                            in Information Systems at Northeastern University. 
+                            <br><br>On the left is a picture of my favourite spot in Mumbai-  Queen's necklace. I can 
+                            sit here for hours just admiring the usually calm Arabian Sea."</p>
+                    </div>
                 </div>
+                
                <br><br><hr>
-                <div class="know-me-section">
-                    <li><img src="../images/singapore.png" class="media-gallery"></li>
-    
-                    <li class="content">
-                        <h1 class="know-me-heading">TRAVELING.</h1>
-                    <p class="know-me-description">"If there is a chance to travel, I make sure to grab
+               <div class="row">
+                   <div class="col">
+                    <img src="../images/singapore.png" class="media-gallery">
+                   </div>
+                   <div class="col">
+                    <h1 class="know-me-heading">TRAVELING.</h1><br><br><br><br><br><br>
+                       <p>"If there is a chance to travel, I make sure to grab
                         that opportunity with both hands! I aim to explore as many cities as I can in my lifetime. I have traveled
                          to United Kingdom, France, Malayasia, Singapore. 
                          <br><br>I visited NYC in Thanksgiving 2020 and it instantly became 
-                         my favorite city!"
-                    <br>
-                </p>
-                    </li>
-    
+                         my favorite city!"</p>
+                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            VIEW CITIES I HAVE VISITED
+                          </button>
                 </div>
+               </div>
                 <br><br><hr>
-                <div class="know-me-section">
-                    <li><img src="../images/butterfly.JPG" class="media-gallery"></li>
-    
-                    <li class="content">
+                <div class="row">
+                    <div class="col">
+                        <img src="../images/butterfly.JPG" class="media-gallery">
+                    </div>
+                    <div class="col">
                         <h1 class="know-me-heading">PHOTOGRAPHY.</h1>
                     <p class="know-me-description"> <em>“A good photograph is knowing where to stand.”</em> - Ansel Adams
                         <br><br>
                         "A quote by the legendary Ansel Adams, often called the Picasso of photography. My passion for 
                         clicking photos arised during my multiple travels where I used to contemplate for long durations, 
                         assessing which angle will capture the image which is stuck in my head. My camera is my constant
-                         companion in all my travels and we have made some wonderful memories together!"
-
-                    <br>
-                </p>
-                    </li>
+                         companion in all my travels and we have made some wonderful memories together!"</p>
+                    </div>
                 </div>
                 <br><br><hr>
-                <div class="know-me-section">
-                    <li><img src="../images/lavercup.png" class="media-gallery"></li>
-    
-                    <li class="content">
-                        <h1 class="know-me-heading">SPORTS.</h1>
-                    <p class="know-me-description">"How would I describe my passion for sports? Let us say it this way, 
-                        I am someone who has lost his voice in stadiums - cheering for my favorite team. I have cried when 
-                        my team loses and also celebrated like a maniac when my team won. <br><br>
-                        Soccer and Tennis in particular are two of
+               <div class="row">
+                   <div class="col">
+                    <img src="../images/lavercup.png" class="media-gallery">
+                   </div>
+                   <div class="col">
+                    <h1 class="know-me-heading">SPORTS.</h1>
+                    <p class="know-me-description">"How would I describe my passion for sports?" Let us put it this way- <br><br> 
+                        "I am someone who has lost his voice in stadiums - cheering for my favorite team. I have cried when 
+                        my team loses and also celebrated like a maniac when my team won." <br><br>
+                        "Soccer and Tennis in particular are two of
                         my favorite sports. My dream is watch Manchester United play at Old Trafford. I had the 
                         privilege of watching Laver Cup in Boston where I saw Roger Federer up close! One of the best days of my life!"
                     <br>
-                </p>
-                    </li>
+                    </p>
+                   </div>
+               </div>
+                <br><br><hr>
+                <div class="row">
+                    <div class="col">
+                        <img src="../images/testimony.png" class="media-gallery">
+                    </div>
+                    <div class="col">
+                        <h1 class="know-me-heading">FUN FACT!</h1>
+                        <p class="know-me-description">"My Alumni testimony is featured on my Undergraduate college's website!"
+
+                            
+                        <br><br><br><br><br><br>
+                        </p>
+                       
+                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Cities Visited:</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                   <ul>
+                                       <li>- London, UK</li><br>
+                                       <li>- Paris, France</li><br>
+                                       <li>- Boston, MA</li><br>
+                                       <li>- New York City, USA</li><br>
+                                       <li>- Las Vegas, USA</li><br>
+                                       <li>- Los Angeles, USA</li><br>
+                                       <li>- San Francisco, USA</li><br>
+                                       <li>- Kuala Lumpur, Malaysia</li><br>
+                                       <li>- Singapore</li><br>
+
+                                       <p>AND COUNTING....!</p>
+                                   </ul>
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-                <br><br>
+               
             </ul>
             
         </div>
+        <hr>
+        <a href="#container"><img src="../images/navigation_up.png" class="navigate-top"></a>
+        </body>
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <h4 class="follow-me">CONTACT ME: </h4><br><br>
+                    <a href="mailto:nigam.ar@northeastern.edu"><img src="../images/email.png" class="social-media-logos">
+                    </a>
+                    <a href="tel:857-867-7890"><img src="../images/call.png" class="social-media-logos">
+                    </a>
+                </div>
+                <div class="col">
+                    <h4 class="follow-me">FOLLOW ME ON:</h4><br><br>
+                    <a target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram" href="https://www.instagram.com/archit.n/"><img src="../images/instagram.png" class="social-media-logos" ></a>
+                     <a target="_blank" data-toggle="tooltip" data-placement="top" title="LinkedIn" href="https://www.linkedin.com/in/archit-nigam/"><img src="../images/linkedin.png" class="social-media-logos"></a>
+                    <a target="_blank" data-toggle="tooltip" data-placement="top" title="GitHub" href="https://github.com/architn"><img src="../images/github.png" class="social-media-logos"></a>
+                    <a target="_blank" data-toggle="tooltip" data-placement="top" title="Medium" href="https://medium.com/@nigamarchit7"><img src="../images/medium.png" class="social-media-logos"></a>
+                    <a target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook" href="https://www.facebook.com/archit.nigam.3/"><img src="../images/facebook.png" class="social-media-logos"></a>
+                </div>            
+            </div>
+            <h3 id="copyright">© 2022 by Archit Nigam.</h3><hr>
     </div>
-   <hr>
-</body>
-<footer>
-    <div id="social-media">
-        <h4 class="follow-me">FOLLOW ME ON:</h4>
-        <a href="https://www.instagram.com/archit.n/" ><img src="../images/instagram.png" class="social-media-logos"></a>
-        <a href="https://www.linkedin.com/in/archit-nigam/"><img src="../images/linkedin.png" class="social-media-logos"></a>
-        <a href="https://github.com/architn"><img src="../images/github.png" class="social-media-logos"></a>
-        <a href="https://medium.com/@nigamarchit7"><img src="../images/medium.png" class="social-media-logos"></a>
-        <a href="https://www.facebook.com/archit.nigam.3/"><img src="../images/facebook.png" class="social-media-logos"></a>
-    </div> 
-     <div id="contact-me-section">
-         <h4 class="follow-me">CONTACT ME: </h4>
-         <a class= "XD" href="mailto:nigam.ar@northeastern.edu"><img src="../images/email.png" class="social-media-logos">
-        </a>
-        <a class= "XD" href="tel:123-456-7890"><img src="../images/call.png" class="social-media-logos">
-        </a>
-     </div>   
-<h3 id="copyright">© 2022 by Archit Nigam.</h3>
-<hr>
 </footer>
 </html>
